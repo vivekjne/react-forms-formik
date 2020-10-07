@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.container{
+  background-color: #f2f2f2;
+  width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-control{
+  margin-bottom: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control label{
+  display: block;
+  margin-bottom: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-control input[type="text"],input[type="email"],input[type="number"],select,textarea{
+  width: 100%;
+  padding: 12px;
+  border:1px solid #ccc;
+}
+
+.submit{
+  padding: 12px;
+  background-color: brown;
+  color: #fff;
+  border:0px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn{
+  padding: 12px;
+  background-color: brown;
+  color: #fff;
+  border:0px;
+  cursor: pointer;
+  
+}
+
+
+.submit:hover{
+  background-color: rgb(149, 35, 35);
+}
+
+.submit:disabled{
+  background-color: #777;
+}
+
+.error{
+  color: red;
+  font-weight: 200;
+}
+
+#gender-radio-group{
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.radio-control label{
+  display: inline;
+  margin:  16px;
+}
+
+.address-container{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-between;
+  margin-bottom: 8px;
 }

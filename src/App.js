@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import BasicForm from './components/BasicForm'
+// import FormikForm from './components/FormikForm'
+// import FormikForm2 from './components/FormikForm2'
+import PortfolioForm from './components/PortfolioForm'
+
+
+
 import './App.css';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PortfolioForm />
   );
 }
 
